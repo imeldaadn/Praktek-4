@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <script src= "jquery-3.6.3.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+            $("#kotak").addClass("kuning");
+            $(".fadeout").click(function(){
+                    $("#kotak").fadeOut();
+                });
+            $(".fadein").click(function(){
+                    $("#kotak").fadeIn();
+                });
+            $(".fadeto").click(function(){
+                    $("#kotak").fadeTo("slow",0.3);
+                });
+        });
+        </script>
+        <style type="text/css">
+            .kuning{
+                width: 200px;
+                height: 200px;
+                background-color: yellow;
+                border: 1px solid black;
+                padding: 5px;
+                margin: 5px;
+                float: inline-end;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div id="kotak"></div>
+        <p><button class="fadeout"> Fade Out </button>
+            <button class="fadein"> Fade In </button>
+            <button class="fadeto"> Fade to 0.3 </button>
+        </p>
+    </body>
+</html>

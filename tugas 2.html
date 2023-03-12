@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <script type="text/javascript" src="jquery-3.6.3.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#kotak1").addClass("kondisiawal");
+                $("#kotak1").dblclick(function(){
+                    $("#kotak1").css({'background-color':'red'});
+                });
+            });
+            $(document).ready(function(){
+                $("#kotak2").addClass("kondisiawal");
+                $("#kotak2").dblclick(function(){
+                    $("#kotak2").css({'background-color':'red'});
+                });
+            });
+            $(document).ready(function(){
+                $("#kotak3").addClass("kondisiawal");
+                $("#kotak3").dblclick(function(){
+                    $("#kotak3").css({'background-color':'red'});
+                });
+            });
+            $(document).ready(function(){
+                $("#kotak4").addClass("kondisiawal");
+                $("#kotak4").dblclick(function(){
+                    $("#kotak4").css({'background-color':'red'});
+                });
+            });
+        </script>
+        <style type="text/css">
+            .kondisiawal{
+                width: 100px;
+                height: 100px;
+                background-color: yellow;
+                padding: 0px;
+                margin: 5px;
+                float: left;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>
+            <p> klik 2x pada setiap kotak untuk merubah warnanya </p>
+        </div>
+        <div id="kotak1"></div>
+        <div id="kotak2"></div>
+        <div id="kotak3"></div>
+        <div id="kotak4"></div>
+    </body>
+</html>
